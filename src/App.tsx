@@ -6,6 +6,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
+const PlaceholderPage = ({ title }: { title: string }) => (
+  <div className="flex min-h-screen items-center justify-center bg-muted">
+    <h1 className="text-2xl font-bold text-primary">{title}</h1>
+  </div>
+);
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -16,7 +22,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/chamador" element={<PlaceholderPage title="Tela do Chamador" />} />
+          <Route path="/triagem" element={<PlaceholderPage title="Tela de Triagem" />} />
+          <Route path="/painel" element={<PlaceholderPage title="Painel de Senhas" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
