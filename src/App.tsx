@@ -23,7 +23,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/chamador" element={<PlaceholderPage title="Tela do Chamador" />} />
+          <Route path="/chamador" element={<Chamador />} />
           <Route path="/triagem" element={<PlaceholderPage title="Tela de Triagem" />} />
           <Route path="/painel" element={<PlaceholderPage title="Painel de Senhas" />} />
           <Route path="*" element={<NotFound />} />
