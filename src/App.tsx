@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Chamador from "./pages/Chamador.tsx";
 
 const PlaceholderPage = ({ title }: { title: string }) => (
   <div className="flex min-h-screen items-center justify-center bg-muted">
