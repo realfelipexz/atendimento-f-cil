@@ -26,7 +26,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/chamador" element={<Chamador />} />
-          <Route path="/triagem" element={<PlaceholderPage title="Tela de Triagem" />} />
+          <Route path="/triagem" element={<Triagem />} />
           <Route path="/painel" element={<Painel />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
